@@ -1,11 +1,9 @@
 
 /* Site Wide */
-html  {
-  font-size:18px;
-  color:white;
-}
 body {
   font-family: helvetica;
+  font-size:18px;
+  color:white;
 }
 h1,h2 {
   font-weight: bold;
@@ -13,6 +11,11 @@ h1,h2 {
 .contained {
   max-width:960px;
   margin:0 auto;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
 }
 /* Title */
 .title{
@@ -42,22 +45,34 @@ h1,h2 {
   background-color: black;
   position: relative;
   padding: 2rem 3rem;
-  top:9rem;
-  width:20rem;/****Changed from spec of 20rem to more closely match layout*/
+  top:9em;
+  width:20em;
 }
 
 .pageHeader h1 {
-  font-size: 2rem;
+  font-size: 2em;
   padding-top: 0.25rem
 }
 .pageHeader h3 {
-  font-size: 1rem;
+  font-size: 1em;
 
 }
-
-@@media only screen and  {
-
+@media only screen and (max-width:470px){
+  .headerImg {
+    height:15em;
+  }
+  .pageHeader{
+    top:10em;
+    padding:1rem 2rem;
+  }
+  .pageHeader h1 {
+    font-size: 1rem;
+  }
+  .pageHeader h3 {
+    font-size: 0.77rem;
+  }
 }
+
 /* Nav */
 nav {
   background-color: firebrick;

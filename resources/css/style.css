@@ -143,6 +143,46 @@ ul a {
     display: none;
   }
 }
-/* */
-
-/* */
+/* Location and Hours section*/
+.location {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  display:flex;
+  justify-content: space-between;
+}
+.wrapper {
+  width: 35%;
+}
+.descrip {
+  padding-left: 2rem;
+  padding-top: 1rem ;
+  padding-bottom: 1rem;
+  background-color: black;
+}
+.info {
+  color:black;
+}
+@media only screen and (max-width:470px) {
+  .location {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .wrapper {
+    width: 90%;
+  }
+.info {
+  padding-bottom:0.5rem;
+}
+}
+/* Footer */
+footer {
+  background-color: black;
+  height:5em;
+  display:flex;
+  align-items: center;
+}
+@media only screen and (max-width:470px) {
+  footer {
+    justify-content: center;
+  }
+}
